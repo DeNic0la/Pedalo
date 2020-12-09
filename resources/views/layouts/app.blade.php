@@ -37,11 +37,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/generate">getFood</a>
                         </li>
+                        @auth
                         @if (Auth::user()->activated >= 1)
                         <li class="nav-item">
                             <a class="nav-link" href="/add">add new Element</a>
                         </li>
                         @endif
+                        @endauth
+
 
                     </ul>
 
