@@ -26,6 +26,6 @@ Auth::routes();
 Route::get('/home', function (){
     redirect('/');
 });
-Route::get('/add', 'FoodController@Add');
-Route::post('/add/item', 'FoodController@AddItem');
-Route::get('/generate', 'FoodController@ShowFood');
+Route::get('/add', 'foodController@Add');
+Route::post('/add/item', 'foodController@AddItem');
+Route::get('/generate', 'foodController@ShowFood');
